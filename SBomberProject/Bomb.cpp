@@ -11,7 +11,7 @@ void Bomb::Draw() const
 {
 	MyTools::SetColor(CC_LightMagenta);
 	GotoXY(x, y);
-	cout << "*";
+	cout << "[|]";
 }
 
 void BombDecorator::Move(uint16_t time)
@@ -23,7 +23,7 @@ void BombDecorator::Draw()const
 {
 	bomb.Draw();
 	GotoXY(bomb.GetX(), bomb.GetY() - 1);
-	cout << "|";
+	cout << "[|]";
 }
 
 void BombDecorator::SetDirection(double dx, double dy)
